@@ -54,10 +54,12 @@
         "symfony/stopwatch": "5.4.*",
         "symfony/web-profiler-bundle": "5.4.*"
     },
+	
     "config": {
         "allow-plugins": {
             "symfony/flex": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "composer/package-versions-deprecated": true
         },
         "optimize-autoloader": true,
         "preferred-install": {
@@ -100,5 +102,5 @@
             "allow-contrib": false,
             "require": "5.4.*"
         }
-    }
+   }
 }
