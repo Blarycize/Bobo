@@ -36,10 +36,13 @@ class BoboController extends AbstractController
         return $this->render('portfolio/portfolio.html.twig', [
             'controller_name' => 'BoboController',
         ]);
+   /**
+     * @Route("/cv", name="cv")
+     */
+   
     }
-    public function download(): Response
-    {
-        // send the file contents and force the browser to download it
-        return $this->file('cv/cv.pdf');
+    public function cv()   {
+ 
+        return $this->file("cv.pdf");
     }
 }
