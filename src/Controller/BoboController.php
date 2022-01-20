@@ -17,4 +17,13 @@ class BoboController extends AbstractController
             'controller_name' => 'BoboController',
         ]);
     }
+    /**
+     * @Route("/pages", name="Mes_loisirs")
+     */
+    public function loisirs(): Response
+    {
+        return $this->render('pages/loisirs.html.twig', [
+            'controller_name' => 'BoboController',
+        ]);
+    }
 }
