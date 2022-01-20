@@ -37,12 +37,12 @@ class BoboController extends AbstractController
             'controller_name' => 'BoboController',
         ]);
    /**
-     * @Route("/cv", name="cv")
+     * @Route("/public")
      */
    
     }
     public function cv()   {
  
-        return $this->file("cv.pdf");
+        return $this->file("/public/assets/cv.pdf");
     }
 }
