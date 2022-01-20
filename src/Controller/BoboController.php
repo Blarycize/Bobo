@@ -26,4 +26,23 @@ class BoboController extends AbstractController
             'controller_name' => 'BoboController',
         ]);
     }
+    /**
+     * @Route("/portfolio", name="portfolio")
+     */
+    public function portfolio(): Response
+    {
+        return $this->render('portfolio/portfolio.html.twig', [
+            'controller_name' => 'BoboController',
+        ]);
+    }
+/**
+     * @Route("/cv", name="cv")
+     */
+    public function cv(): Response
+    {
+        return $this->render('cv/cv.html.twig', [
+            'controller_name' => 'BoboController',
+        ]);
+    }
+
 }

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}E-portfolio{% endblock %}
+{% block title %}portfolio{% endblock %}
 
 {% block body %}
 <!DOCTYPE html>
@@ -50,10 +50,9 @@ https://templatemo.com/tm-531-reflux
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li><a href="#section1">A propos</a></li>
-                <li><a href="{{ path('portfolio') }}">portfolio</a></li>
-                <li><a href="#section4">Me contacter</a></li>
-                <li><a href="{{ asset('cv') }}">CV</a></li>
+                <li><a href="#section1">Page d'acceuil</a></li>
+                <li><a href="{{ path('Mes_loisirs') }}">Mes loisirs</a></li>
+                <li><a href="#section5">CV</a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -69,7 +68,8 @@ https://templatemo.com/tm-531-reflux
                 <li>
                   <a href="#"><i class="fa fa-linkedin"></i></a>
                 </li>
-               
+                <li>
+
               </ul>
             </div>
             <div class="copyright-text">
@@ -79,120 +79,60 @@ https://templatemo.com/tm-531-reflux
         </div>
       </div>
 
-      <section class="section about-me" data-section="section1">
+
+      <section class="section my-services" data-section="section2">
         <div class="container">
           <div class="section-heading">
-            <h2>A propos de moi</h2>
+            <h2>Mes compétences</h2>
             <div class="line-dec"></div>
             <span
-              >Bonjour, je suis Nathan Bobo actuellement en 
-              première année d'un BUT réseau et Télécommunication! j'ai 19 ans j'habite à Renaison et 
-              je voudrais partir travailler à l'étranger dans la cyber-sécurité.
-              Voici mon E-portfolio où vous pourrez 
-              en savoir plus sur moi !  .</span
-            >
-          </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="assets/images/left-image.png" alt="" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  
-                  <div class="white-button">
-                    <a href="{{ path('Mes_loisirs') }}">En savoir plus</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-
-     
-
-      <section class="section contact-me" data-section="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Me contacter</h2>
-            <div class="line-dec"></div>
-            <span
-              >Si vous êtes intérreser par mon profil ou si vous voulez
-              me poser des questions.Je vous invite à me contacter via le formulaire
-              ci-dessous:.</span
+              >Voici Mon portfolio de compétences où vous pourrez voir
+              tout mes points forts.</span
             >
           </div>
           <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="" method="post">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Votre nom ..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Votre email ..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Sujet ..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Votre message ..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Envoyer un message
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h3>Idée créative</h3>
+                <p>Je réfléchis beaucoup pour trouver de nouvelles amélioration dans un projet.
+
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>HTML5 &amp; CSS3</h4>
+                <p>
+                  je peux coder un site en HTML et CSS avec un design épurer pour des entreprises
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>Paramétrage</h4>
+                <p>
+                 Je peux configurer des switch et trouver les déffailances quelles ont en utilisant l'outil putty.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Administration</h4>
+                <p>
+                  j'ai des compétences dans l'admnistration réseau ce qui me permet de superviser des postes 
+                  dans un réseau local.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+    
     </div>
 
     <!-- Scripts -->
